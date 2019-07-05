@@ -1,0 +1,331 @@
+header{
+	background-image:url(../../assets/images/background.jpg);
+	background-repeat:no-repeat;
+	width:100%;
+	max-height:780px;
+	background-size:cover;
+	color:#fff;
+}
+header nav li a{
+	color:#fff !important;;
+}
+header nav li a:hover{
+	color:#fff !important;
+}
+.form-check label{
+	text-transform:uppercase;
+}
+input[type="checkbox"]{
+  width: 15px; /*Desired width*/
+  height: 15px; /*Desired height*/
+  cursor: pointer;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  -o-appearance:none;
+  border: 1px solid #aa9b77;
+}
+section.library{
+	background-color:#f5f6f7;
+}
+input[type=checkbox] {
+    position: relative;
+}
+
+input[type=checkbox]:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Above three lines allow the checkbox:after position at checkbox's position */
+    content: '';
+    width: 32px;
+    height: 32px;
+    z-index: 1; 
+}
+/*test*/
+
+.custom-check {
+	line-height: 1rem;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+label.custom-check{
+	margin-bottom:0;
+	
+}
+.btn.btn-custom{
+	background-color:#aa9b77;
+	line-height:.5rem;
+	color:#fff;
+	font-size:.7rem;
+	padding: 0.5rem .75rem;
+}
+/* Hide the browser's default checkbox */
+.custom-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border: 1px solid #aa9b77;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #c5b6b6;
+  
+}
+
+/* On mouse-over, add a grey background color */
+.custom-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-check input:checked ~ .checkmark {
+  background-color: #aa9b77;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-check .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.card.card-personal img.card-img-top{
+	width:auto;
+	max-height: 190px;
+}
+.card.card-personal{
+	transition: 0.5s;
+	background-color:#f5f6f7;
+}
+.card.card-personal:hover {
+	border:1px solid #a99b77;
+}
+
+.card.card-personal p, .card.card-personal span{
+	    font-size: .8rem;
+		margin-bottom:0;
+}
+/*flicker icon */
+.btn {
+background-color: #ffd200;
+color: #00174f;
+display: inline-block;
+text-decoration: none;
+padding: 13px 30px;
+margin: 30px 0 0 0;
+border-radius: 3px;
+font-weight: bold;
+}
+.btn:hover {
+background-color: #fff;
+}
+.btn--transition {
+-webkit-transition: -webkit-transform 0.2s;
+-webkit-transition: all 200ms ease-in-out;
+transition: all 200ms ease-in-out;
+}
+:focus {
+outline: none;
+}
+.icons {
+margin: 50px 0;
+}
+.icon {
+background-color: #ff3000;
+border: 0;
+height: 79px;
+width: 58px;
+border-radius: 50%;
+cursor: pointer;
+position: relative;
+}
+.icon span {
+display: block;
+height: 5px;
+width: 33px;
+background-color: #ffffff;
+border-radius: 2px;
+position: absolute;
+left: 23px;
+-webkit-transition: -webkit-transform 0.3s;
+-webkit-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;
+}
+.icon span:first-child {
+top: 28px;
+}
+.icon span:nth-child(2) {
+top: 37px;
+}
+.icon span:last-child {
+top: 46px;
+}
+.icon--active span:first-child {
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+position: absolute;
+top: 37px;
+}
+.icon--active span:last-child {
+-webkit-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+transform: rotate(-45deg);
+position: absolute;
+top: 37px;
+}
+.icon--active span:nth-child(2) {
+opacity: 0;
+}
+.icon--button {
+border-radius: 10px;
+}
+.icon--square {
+border-radius: 0;
+}
+.icon--transparent {
+background-color: transparent;
+}
+.icon--transparent span {
+background-color: #fff;
+}
+.icon-transition {
+-webkit-transition: -webkit-transform 0.3s;
+-webkit-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;
+}
+button:focus {
+    outline: none;
+}
+
+
+.card-body{
+	padding: 1rem;
+	text-transform:uppercase;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #62635a;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right:3px;
+  cursor:pointer;
+}
+span.dot:nth-child(2){
+    background-color: #ca5f35;
+}
+span.dot:nth-child(3){
+    background-color: #3599ca;
+}
+.pt-5, .py-5 {
+    padding-top: 0rem!important;
+}
+.navbar.navbar-expand-lg{
+		background: rgba(0, 0, 0, .3);
+	}
+/* continue*/
+.btn.btn-custom.float-right{
+	float:none !important;
+	line-height:initial;
+}
+
+.navbar.navbar-expand-lg{
+	padding:0;
+}
+.navbar-collapse ul li a{
+      background: rgba(0, 0, 0, 1);
+      padding: 6px 15px !important;
+}
+.navbar-collapse ul li{
+    border-bottom: 1px solid #333;
+}
+.navbar-brand{
+	margin-left:1rem;
+}
+button.icon{
+	margin-right:1rem;
+}
+.navbar-collapse.pb-3{
+	padding-bottom: 0rem!important;
+}
+.navbar-collapse.pt-3{
+	padding-top: 0rem!important;
+}
+
+@media (min-width: 1200px){
+nav .container-fluid {
+    max-width: 1140px;
+}
+}
+
+@media screen and (min-width: 769px) {
+	h1{
+		font-size:2.5rem;
+	}
+	p{
+		font-size:1.3rem;
+	}
+	.pt-5-1{
+		padding-top:6rem !important;
+	}
+	.pt-5, .py-5 {
+    padding-top: 3rem!important
+	}
+	.navbar.navbar-expand-lg{
+		background: rgba(0, 0, 0, .3);
+	}
+	.btn.btn-custom.float-right{
+	float:right !important;
+	margin:0;
+	}
+	.navbar-collapse ul li a{
+		background:none;
+	}
+	.navbar-collapse ul li{
+		border-bottom:none;
+	}
+	.navbar-brand{
+	margin-left:0rem;
+	}
+	button.icon{
+		margin-right:0rem;
+	}
+	.navbar-collapse.pb-3 {
+	padding-bottom: 1rem!important;
+	}
+	.navbar-collapse.pt-3{
+	padding-top: 1rem!important;
+	}
+}
